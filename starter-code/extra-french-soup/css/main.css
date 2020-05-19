@@ -7,3 +7,84 @@ html {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px
 }
+
+.main{
+  position: relative;
+}
+
+.onion-picture{
+  position:relative;
+}
+
+.onion-picture h1{
+  color: white;
+  font-size: 90px;
+  font-family: verdana;
+  text-align: center;
+  position:absolute;
+  z-index: 2;
+  top: 40%;
+  left: 0;
+  right: 0;
+}
+
+.onion-picture img{  
+  width: 75%;
+  height: 75%;
+  display:block;
+  margin:auto;
+}
+
+.onion-body{ 
+  position:absolute;
+  left: 20%;
+}
+
+.onion-body p{
+  margin-top: 60px;
+  font-size: 25px;
+  color: #464443;
+  text-align: center;
+}
+
+.onion-body section{  
+  border-bottom-style: solid;
+  border-bottom-color: grey; 
+  width:80%;
+}
+
+.onion-body-img1{
+  width: auto;
+  height: 80px;
+  display:block;
+  margin:auto;
+}
+
+.onion-body-img2{
+  width: auto;
+  height: 100px;
+  display:block;
+  margin:auto;
+}
+
+.list {
+  list-style-type: none;
+  font-size: 20px;
+  color:#464443;
+}
+
+.list li:before {
+  content: "- ";
+}
+
+.list2 {
+ font-size: 20px;
+ list-style-type: none;
+ counter-reset: list;
+ color:#464443;
+}
+
+.list2 li:before{
+  content: counter(list) ") ";
+  counter-increment: list;
+}
